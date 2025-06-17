@@ -1,28 +1,25 @@
-# Gerenciador de Estoque em Python
+# 📦 Stock Manager in Python
 
-## Sobre o projeto
+## 📑 About the Project
+A simple project made in Python to practice concepts of **Object-Oriented Programming (OOP)** and **loops**.
 
-Um projeto simples feito em Python para praticar conceitos de Programação Orientada a Objetos (POO) e estruturas de repetição.
+The program simulates a basic stock management system, allowing:
 
-O programa simula um sistema básico de gerenciamento de estoque, permitindo:
+- Add products to stock
+- Remove products from stock (with quantity check)
+- View current stock
+- Exit the program
 
-- Adicionar produtos ao estoque
-- Remover produtos do estoque (com verificação de quantidade)
-- Consultar o estoque atual
-- Encerrar o programa
+## 🚀 Features
+- Add items to stock
+- Remove items from stock with quantity verification
+- Display current stock
+- Interactive menu running in a loop until the user chooses to exit
 
-## Funcionalidades
-
-- Adicionar itens ao estoque
-- Remover itens do estoque com verificação de quantidade disponível
-- Mostrar o estoque atual
-- Menu interativo rodando em loop até o usuário escolher sair
-
-## Aprendizados aplicados
-
-- Criação de classes e métodos em Python
-- Manipulação de atributos com `self`
-- Estruturas de repetição (`while`)
-- Condicionais (`if / else`)
-- Entrada de dados com `input`
-- Tratamento básico de erros com `try / except`
+## 🧠 Concepts Applied
+- Creating classes and methods in Python
+- Managing attributes with `self`
+- Loops (`while`)
+- Conditionals (`if / else`)
+- User input with `input`
+- Basic error handling with `try / except`
