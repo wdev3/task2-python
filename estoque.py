@@ -1,57 +1,57 @@
-class estoque:
-    def __init__(self, quantidade = 0):
-        self.quantidade = quantidade
+class Stock:
+    def __init__(self, quantity=0):
+        self.quantity = quantity
 
-    def adicionar(self, adicao):
-        self.quantidade += adicao
+    def add(self, addition):
+        self.quantity += addition
 
-    def remover(self, remocao):
-        if remocao <= self.quantidade:
-            print ("Estoque removido")
-            self.quantidade -= (remocao)
+    def remove(self, removal):
+        if removal <= self.quantity:
+            print("Stock removed")
+            self.quantity -= removal
         else:
-            print("Nao foi possivel remover essa quantidade")
+            print("It was not possible to remove that quantity")
 
-    def mostrar(self):
-        print (F"Estoque atual: {self.quantidade}")
+    def show(self):
+        print(f"Current stock: {self.quantity}")
+
 
 def menu():
-    print ("1 - adicionar produto ao estoque")
-    print ("2 - remover produto do estoque")
-    print ("3 - mostrar estoque atual")
-    print ("4 - sair")
+    print("1 - Add product to stock")
+    print("2 - Remove product from stock")
+    print("3 - Show current stock")
+    print("4 - Exit")
 
 
-
-add = estoque(0)
+stock = Stock(0)
 
 menu()
 try:
- while True:
-  pergunta = int(input(""))
-  if pergunta == 1:
-    print ("Digite o valor que deseja adiconar ao estoque: ")
-    pergunta_adicionar_estoque = int(input("\n"))
-    add.adicionar (pergunta_adicionar_estoque)
-    print (f"O valor {pergunta_adicionar_estoque} foi adicionado ao estoque")
-    menu()
+    while True:
+        question = int(input(""))
+        if question == 1:
+            print("Enter the quantity you want to add to stock: ")
+            add_stock = int(input("\n"))
+            stock.add(add_stock)
+            print(f"The quantity {add_stock} was added to stock")
+            menu()
 
-  if pergunta == 2:
-    print("Digite o valor que deseja remover do estoque: ")
-    pergunta_remover_estoque = int(input("\n"))
-    add.remover(pergunta_remover_estoque)
-    print (f"O valor foi {pergunta_remover_estoque} foi removido do estoque")
-    menu()
+        if question == 2:
+            print("Enter the quantity you want to remove from stock: ")
+            remove_stock = int(input("\n"))
+            stock.remove(remove_stock)
+            print(f"The quantity {remove_stock} was removed from stock")
+            menu()
 
-  if pergunta == 3:
-    add.mostrar()
-    menu()
+        if question == 3:
+            stock.show()
+            menu()
 
-  if pergunta == 4:
-    print ("Programa encerrado...")
-    break
-  else:
-    print ("Digite apenas numeros de 1 a 4")
-    menu()
+        if question == 4:
+            print("Program terminated...")
+            break
+        else:
+            print("Please enter numbers from 1 to 4")
+            menu()
 except ValueError:
-   print("Digite apenas numeros inteiros!")
+    print("Please enter only integer numbers!")
